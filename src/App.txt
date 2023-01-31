@@ -1,0 +1,26 @@
+function App() {
+  //const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("hi");
+
+    return () => {
+      console.log("cleanup");
+    };
+  }, []);
+
+  // const clickHandler = () => {
+  //   setCount((prevState) => prevState + 1);
+  // };
+
+  return (
+    <div className="App">
+      {/* <EmpCard name="Hemanth" age="25" />
+      <StateUpdate />
+      <Parent />
+      <GetComments /> */}
+      {/* <div>{count}</div>
+      <button onClick={clickHandler}>click</button> */}
+    </div>
+  );
+}
